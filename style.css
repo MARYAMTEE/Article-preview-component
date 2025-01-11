@@ -7,7 +7,7 @@
 }
 
 :root{
-    --Dark-Grayis-Blue: hsl(217, 19%, 35%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 35%);
     --Dark-Blue: hsl(214, 17%, 51%);
     --Grayish-Blue: hsl(212, 23%, 69%);
     --Light-Grayish-Blue: hsl(210, 46%, 95%);
@@ -21,8 +21,23 @@ body{
 
 .container{
     background-color: white;
+    max-width: 100%;
+    padding: 35px;
 }
 
+h1{
+    color: var(--Dark-Grayish-Blue);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.para1{
+    color: var(--Dark-Blue);
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 15px 0;
+}
 
 .drawer-img{
     width: 100%;
@@ -31,4 +46,8 @@ body{
     object-fit: cover;
     display: block;  
     /* border-top-right-radius: 15px;      */
+}
+
+.col{
+    display: flex;
 }
