@@ -72,3 +72,12 @@ h2{
     margin-left: -50px;
     line-height: 1.6;
 }
+
+button{
+    border: none;
+    background-color: var(--Light-Grayish-Blue);
+    color: var(--Dark-Blue);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
