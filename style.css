@@ -22,7 +22,9 @@ body{
 .container{
     background-color: white;
     max-width: 100%;
-    padding: 35px;
+    padding: 35px 35px 0 35px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 h1{
@@ -46,6 +48,7 @@ h2{
 
 .para2{
     font-size: 12px;
+    font-weight: 500;
     color: var(--Dark-Blue);
 }
 
@@ -55,7 +58,8 @@ h2{
     height: 200px;
     object-fit: cover;
     display: block;  
-    /* border-top-right-radius: 15px;      */
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px; 
 }
 
 .col{
@@ -71,6 +75,7 @@ h2{
 .descriptionDetails{
     margin-left: -50px;
     line-height: 1.6;
+    padding: 20px 0;
 }
 
 button{
@@ -80,4 +85,40 @@ button{
     width: 32px;
     height: 32px;
     border-radius: 50%;
+}
+
+/* SOCIAL ICONS */
+.social-icons{
+    visibility: hidden;
+}
+.social-icons ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 20px 35px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+li p{
+    color: var(--Grayish-Blue);
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+li a{
+    color: var(--Light-Grayish-Blue); 
+}
+
+.icon{
+    margin-left: -20px;   
+}
+
+.fab{
+    font-size: 25px;
 }
