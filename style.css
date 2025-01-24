@@ -110,7 +110,7 @@ button:focus{
     background-color: var(--Dark-Grayish-Blue);
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding: 20px 35px;
+    padding: 30px 35px;
     transition: all 0.3s ease-in-out;
 }
 
