@@ -26,7 +26,7 @@ body{
 .container{
     background-color: white;
     max-width: 21rem;
-    padding: 35px 35px 0 35px;
+    /* padding: 35px 35px 0 35px; */
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -82,6 +82,10 @@ h2{
     padding: 20px 0;
 }
 
+.share-icon{
+    z-index: 20;
+}
+
 button{
     border: none;
     background-color: var(--Light-Grayish-Blue);
@@ -90,7 +94,9 @@ button{
     height: 32px;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
+
 button:focus{
     border: none;
 }
@@ -98,20 +104,23 @@ button:focus{
 /* SOCIAL ICONS */
 .social-icons{
     display: none;
+    position: absolute;
+    bottom: 100px;
     width: 21rem;
-    margin: 0 -35px;
     background-color: var(--Dark-Grayish-Blue);
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 20px 35px;
-    z-index: 2;
+    transition: all 0.3s ease-in-out;
 }
 
 
 .social-icons ul{
     display: flex;
-    gap: 32px;
     align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
     
 }
 
@@ -134,7 +143,7 @@ li a{
 }
 
 .fab{
-    font-size: 20px;
+    font-size: 23px;
 }
 
 @media only screen and (min-width: 1200px){
@@ -172,16 +181,16 @@ section{
 
 .social-icons {
     position: absolute;
-    top: 290px;
-    right: 150px;
-    padding: 1.2rem 2rem;
-    width: 25%;
+    bottom: 470px;
+    right: 240px;
+    width: 20%;
+    padding: 20px;
     background-color: var(--Dark-Grayish-Blue);
     border-radius: .8rem;
-    margin: 0;
+    height: 6%;
 }
 
-.social-icons::before{
+.social-icons::after{
     content: " ";
     display: block;
     width: 20px;
