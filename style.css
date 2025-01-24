@@ -26,7 +26,7 @@ body{
 .container{
     background-color: white;
     max-width: 21rem;
-    /* padding: 35px 35px 0 35px; */
+    padding: 35px 35px 0 35px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -35,6 +35,7 @@ h1{
     color: var(--Dark-Grayish-Blue);
     font-size: 16px;
     font-weight: 700;
+    line-height: 1.5;
 }
 
 h2{
@@ -46,7 +47,7 @@ h2{
     color: var(--Dark-Blue);
     font-size: 13.5px;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.6;
     padding: 15px 0;
 }
 
@@ -77,6 +78,7 @@ h2{
 }
 
 .descriptionDetails{
+   margin-top: 15px;
     margin-left: -50px;
     line-height: 1.6;
     padding: 20px 0;
@@ -86,15 +88,21 @@ h2{
     z-index: 20;
 }
 
+button:active{
+    background-color: var(--Dark-Grayish-Blue);
+    color: var(--Light-Grayish-Blue);
+}
+
 button{
     border: none;
     background-color: var(--Light-Grayish-Blue);
     color: var(--Dark-Blue);
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-out;
 }
 
 button:focus{
@@ -105,13 +113,14 @@ button:focus{
 .social-icons{
     display: none;
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
     width: 21rem;
     background-color: var(--Dark-Grayish-Blue);
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding: 30px 35px;
-    transition: all 0.3s ease-in-out;
+    padding: 25px 35px;
+    transition: all 0.3s ease-out;
+    margin: 0 0 -26px -35px;
 }
 
 
@@ -129,6 +138,7 @@ li p{
     color: var(--Grayish-Blue);
     letter-spacing: 5px;
     font-weight: 500;
+    font-size: 12px;
 }
 
 li a{
@@ -140,13 +150,14 @@ li a{
 }
 
 .fab{
-    font-size: 23px;
+    font-size: 20px;
 }
 
 @media only screen and (min-width: 1200px){
 
 h1{
-    font-size: 23px;
+    font-size: 21px;
+    line-height: 1.4;
 }
 
 body{
@@ -159,6 +170,7 @@ section{
 .container{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     max-width: 30rem;
     padding: 35px 45px 20px 45px;
@@ -166,9 +178,13 @@ section{
 
 .drawer-img{
     border-top-left-radius: 15px;
-    border-top-right-radius: 0;
     border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
     height: 100%;
+}
+
+.drawer-img img{
+    object-fit: cover;
 }
 
 .descriptionDetails{
@@ -178,17 +194,21 @@ section{
 
 .social-icons {
     position: absolute;
-    top: 280px;
-    right: 180px;
-    width: 20%;
-    padding: 20px;
+    top: 310px;
+    right: 205px;
+    width: 17%;
+    padding: 11px 45px;
     background-color: var(--Dark-Grayish-Blue);
     border-radius: .8rem;
-    height: 10%;
+    height: 8%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .social-icons ul{
+    display: flex;
     justify-content: center;
+    align-items: center;
+    
 }
 
 .social-icons::after{
