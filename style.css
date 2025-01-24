@@ -113,7 +113,7 @@ button:focus{
 .social-icons{
     display: none;
     position: absolute;
-    bottom: 29px;
+    bottom: 28px;
     width: 21rem;
     background-color: var(--Dark-Grayish-Blue);
     border-bottom-right-radius: 15px;
@@ -153,7 +153,7 @@ li a{
     font-size: 20px;
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 800px){
 
 h1{
     font-size: 21px;
