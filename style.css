@@ -113,7 +113,7 @@ button:focus{
 .social-icons{
     display: none;
     position: absolute;
-    bottom: 30px;
+    bottom: 29px;
     width: 21rem;
     background-color: var(--Dark-Grayish-Blue);
     border-bottom-right-radius: 15px;
